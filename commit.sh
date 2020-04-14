@@ -3,8 +3,7 @@ git add --al
 COMMIT_MSG=$1
 COMMIT_MSG=${COMMIT_MSG:-'auto commit'}
 echo ${COMMIT_MSG}
-# git commit -m "$COMMIT_MSG"
-git commit -m "empty"
+git commit -m "$COMMIT_MSG"
 
 #Get the highest tag number
 VERSION=`git describe --abbrev=0 --tags`
